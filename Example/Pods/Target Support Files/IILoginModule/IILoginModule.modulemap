@@ -1,0 +1,6 @@
+module IILoginModule {
+  umbrella header "IILoginModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

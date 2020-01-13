@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactProgress">
+            <connections>
+                <outlet property="labelTips" destination="EZg-pJ-jO4" id="tJd-yz-KcA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在初始化数据，请稍候" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZg-pJ-jO4">
+                    <rect key="frame" x="0.0" y="324" width="375" height="19.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19.5" id="jwQ-HF-kFx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.043137254901960784" green="0.59999999999999998" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8c-c8-RKt">
+                    <rect key="frame" x="133.5" y="176" width="108" height="108"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="108" id="HT1-W5-4Vm"/>
+                        <constraint firstAttribute="height" constant="108" id="Vt6-vB-HVe"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="0.0" height="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowUIColor">
+                            <color key="value" red="0.31764705879999999" green="0.47058823529999999" blue="0.62352941179999999" alpha="0.23552178900000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.10000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="1ht-Ys-NJR">
+                    <rect key="frame" x="139" y="182" width="97" height="87"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="87" id="ZrS-6v-23i"/>
+                        <constraint firstAttribute="width" constant="97" id="x9M-Rj-Sfa"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="S8c-c8-RKt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DcV-hY-0Wt"/>
+                <constraint firstItem="EZg-pJ-jO4" firstAttribute="top" secondItem="S8c-c8-RKt" secondAttribute="bottom" constant="40" id="EEc-Q4-3K8"/>
+                <constraint firstItem="1ht-Ys-NJR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FIP-ne-I2j"/>
+                <constraint firstItem="EZg-pJ-jO4" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="M8f-j5-m9y"/>
+                <constraint firstItem="EZg-pJ-jO4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MS3-vJ-oR9"/>
+                <constraint firstItem="EZg-pJ-jO4" firstAttribute="top" secondItem="1ht-Ys-NJR" secondAttribute="bottom" constant="55" id="Qni-gs-unp"/>
+                <constraint firstItem="EZg-pJ-jO4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="w1D-Ak-w2b"/>
+                <constraint firstAttribute="trailing" secondItem="EZg-pJ-jO4" secondAttribute="trailing" id="zrV-98-yce"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group_Logo" width="97" height="87"/>
+    </resources>
+</document>

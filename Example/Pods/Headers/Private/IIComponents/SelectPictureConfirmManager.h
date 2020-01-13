@@ -1,0 +1,1 @@
+../../../IIComponents/IIComponents/Classes/IIAlbumAndPhoto/SelectPictureConfirmManager.h

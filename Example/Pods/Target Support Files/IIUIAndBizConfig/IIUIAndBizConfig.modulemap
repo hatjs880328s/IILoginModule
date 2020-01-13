@@ -1,0 +1,6 @@
+module IIUIAndBizConfig {
+  umbrella header "IIUIAndBizConfig-umbrella.h"
+
+  export *
+  module * { export * }
+}

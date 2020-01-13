@@ -1,0 +1,25 @@
+IIWCDB:
+https://github.com/Tencent/wcdb/wiki
+
+1.IIDatabase类
+z.对MODEL进行 CRUD 等基础操作
+a.所有调用database此工具类的文件必然是DAL层
+b.model需要按照WCDB定义进行格式化
+c.如果需要新的wcdb-api需要自行添加到database类中
+
+2.IIDatabaseManager类
+a.所有调用Manager此工具类可能包含在业务代码中-（退出登陆、切换企业）
+b.WCDB使用的密码配置存储在此类中，在应用启动时需提前设置wcdb密码，以便数据库启动时调用
+c.若使用根据用户名信息生成动态密码，则需要在进行登录等操作时重新生成相应的密码
+
+3.数据库技术切换
+a.目前将所有的调用方法限制在DAL中，以后替换数据库只需要更改 database & databasemanager 类，如果这俩类无法进行技术替换，则需要将dal中对model的CRUD进行修改
+b.Model和wcdb耦合较深，需要替换
+
+
+
+注意
+1.如果需要关闭数据库之后操作数据库文件（如移动等），需要使用异步的关闭方法
+
+
+

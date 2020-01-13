@@ -1,0 +1,6 @@
+module IIOCUtis {
+  umbrella header "IIOCUtis-umbrella.h"
+
+  export *
+  module * { export * }
+}

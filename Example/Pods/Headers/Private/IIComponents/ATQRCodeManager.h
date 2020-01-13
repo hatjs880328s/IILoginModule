@@ -1,0 +1,1 @@
+../../../IIComponents/IIComponents/Classes/IMPPlus/Plugs/QRService/ATQRCodeManager.h

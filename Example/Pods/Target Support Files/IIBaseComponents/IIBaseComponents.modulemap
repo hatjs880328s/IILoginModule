@@ -1,0 +1,6 @@
+module IIBaseComponents {
+  umbrella header "IIBaseComponents-umbrella.h"
+
+  export *
+  module * { export * }
+}

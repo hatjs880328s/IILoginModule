@@ -1,0 +1,6 @@
+module IIAOPNBP {
+  umbrella header "IIAOPNBP-umbrella.h"
+
+  export *
+  module * { export * }
+}

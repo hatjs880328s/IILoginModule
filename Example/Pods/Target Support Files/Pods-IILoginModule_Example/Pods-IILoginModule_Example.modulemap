@@ -1,0 +1,6 @@
+module Pods_IILoginModule_Example {
+  umbrella header "Pods-IILoginModule_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
